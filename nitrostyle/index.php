@@ -7,7 +7,7 @@
 			<div class="panel-body">
 				<span class="glyphicon glyphicon-time" aria-hidden="true"></span>&nbsp<?php the_time('Y-m-d') ?>
 				<div class="nitrostyle-post-content">
-					<?php the_content(); ?>
+					<?php nitrostyle_post_excerpt(300); ?>
 				</div>
 			</div>
 			<div class="panel-footer">
