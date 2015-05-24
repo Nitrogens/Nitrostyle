@@ -13,7 +13,7 @@
 
 3.安装方法
 --
- 1. Download ZIP。
+ 1. 在https://github.com/Nitrogens/Nitrostyle/releases下载最新版本。
  2. 解压。
  3. 将nitrostyle目录上传到wordpress目录中的wp-content/themes目录中。
  4. 在后台启用主题。
