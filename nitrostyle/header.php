@@ -1,3 +1,6 @@
+<?php
+nitrostyle_setting_init();
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>

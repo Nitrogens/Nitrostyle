@@ -8,7 +8,15 @@
 			<div class="panel-body">
 				<span class="glyphicon glyphicon-time" aria-hidden="true"></span>&nbsp<?php the_time('Y-m-d') ?>
 				<div class="nitrostyle-post-content">
-					<?php nitrostyle_post_excerpt(300); ?>
+					<?php
+						$isexcerpt = get_option("nitrostyle_isexcerpt");
+						$excerptlength = get_option("nitrostyle_excerptlength");
+						if ( $isexcerpt == "1" ) {
+							nitrostyle_post_excerpt($excerptlength); 
+						} else {
+							the_content();
+						}
+					?>
 				</div>
 			</div>
 			<div class="panel-footer">

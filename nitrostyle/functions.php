@@ -1,5 +1,8 @@
 <?php
-function nitrostyle_comment($comment, $args, $depth){
+
+require_once("settings.php");
+
+function nitrostyle_comment($comment, $args, $depth) {
 	$GLOBALS["comment"] = $comment;
 	?>
 	<li class="list-group-item nitrostyle-comment">
@@ -11,4 +14,16 @@ function nitrostyle_comment($comment, $args, $depth){
 	</li>
 	<?php
 }
+
+function nitrostyle_post_excerpt($length, $isoutput = true) {
+	$post_content = get_the_content();
+	$post_content_plain = strip_tags($post_content);
+	$output = mb_strimwidth($post_content_plain, 0, $length, "");
+	if ($isoutput = true) {
+		echo $output;
+	} else {
+		return $output;
+	}
+}
+
 ?>
