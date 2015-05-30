@@ -45,6 +45,12 @@ nitrostyle_setting_init();
 						<li<?php if ( is_home() ) : ?> class="active"<?php endif; ?>><a href="<?php bloginfo("url"); ?>#">首页</a></li>
 						<?php wp_list_pages("title_li="); ?>
 					</ul>
+					<form class="navbar-form navbar-right" action="" method="get">
+						<div class="form-group">
+							<input type="text" class="form-control" name="s"></input>
+						</div>
+						<button type="submit" class="btn btn-default">搜索</button>
+					</form>
 				</div>
 			</div>
 		</nav>
