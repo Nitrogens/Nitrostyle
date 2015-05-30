@@ -1,0 +1,13 @@
+.nitrostyle-setting {
+	font-family: "Microsoft Yahei UI", "Microsoft Yahei", "Arial";
+}
+
+.nitrostyle-setting > h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.nitrostyle-setting label {
+	font-size: 16px;
+	font-weight: bold;
+}

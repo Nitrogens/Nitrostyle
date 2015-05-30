@@ -1,5 +1,11 @@
+<?php
+$sidebar_newest = get_option("nitrostyle_sidebar_newest");
+$sidebar_category = get_option("nitrostyle_sidebar_category");
+$sidebar_archive = get_option("nitrostyle_sidebar_archive");
+?>
 <div class="col-md-4">
-	<h2 class="nitrostyle-widget-title nitrostyle-widget-title-top">最新文章</h2>
+	<?php if ( $sidebar_newest == "1" ) : ?>
+	<h2 class="nitrostyle-widget-title">最新文章</h2>
 	<div class="list-group">
 		<?php 
 			$new_posts_list_array = get_posts("orderby=post_date&order=DESC&numberposts=3");
@@ -10,6 +16,8 @@
 			wp_reset_postdata();
 		?>
 	</div>
+	<?php endif; ?>
+	<?php if ( $sidebar_category == "1" ) : ?>
 	<h2 class="nitrostyle-widget-title">文章分类</h2>
 	<div class="list-group">
 		<?php 
@@ -19,10 +27,13 @@
 			}
 		?>
 	</div>
+	<?php endif; ?>
+	<?php if ( $sidebar_archive == "1" ) : ?>
 	<h2 class="nitrostyle-widget-title">文章存档</h2>
 	<div class="list-group">
 		<?php 
 			wp_get_archives("format=custom");
 		?>
 	</div>
+	<?php endif; ?>
 </div>

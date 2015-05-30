@@ -1,6 +1,6 @@
 <?php
 
-require_once("settings.php");
+require_once("setting.php");
 
 function nitrostyle_comment($comment, $args, $depth) {
 	$GLOBALS["comment"] = $comment;

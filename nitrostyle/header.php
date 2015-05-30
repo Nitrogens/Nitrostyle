@@ -8,7 +8,7 @@ nitrostyle_setting_init();
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css" />
 	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<title><?php

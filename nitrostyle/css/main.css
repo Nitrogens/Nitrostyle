@@ -1,0 +1,55 @@
+body {
+	font-family: "Microsoft Yahei UI", "Microsoft Yahei", "Arial";
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.nitrostyle-post-title {
+	font-size: 18px;
+	text-decoration: none; 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.nitrostyle-post-title > a {
+	color: black;
+}
+
+.nitrostyle-post-content {
+	margin-top: 5px;
+}
+
+.nitrostyle-next-posts-link {
+	float: right;
+}
+
+.nitrostyle-comment {
+	padding-bottom: 5px;
+}
+
+.nitrostyle-comment-content {
+	margin-top: 5px;
+}
+
+.nitrostyle-widget-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.nitrostyle-footer {
+	text-align: center;
+	color: #767676;
+}
+
+.panel, .list-group {
+	word-wrap: break-word;
+}
+
+.panel-heading {
+	padding-top: 12px;
+}
+
+.panel-body {
+	padding-bottom: 5px;
+}
