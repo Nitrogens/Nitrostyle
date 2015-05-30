@@ -10,11 +10,11 @@
 --
 本主题采用GPLv2协议开源。
 
-(This theme uses GPL License(Version 2).)
+This theme uses GPL License(Version 2).
 
 （本主题之前曾采用MIT协议，为防止争议，改为该协议。之前的所有版本都改为遵循GPLv2协议。）
 
-(This theme had used MIT License before. I changed the license to GPL License(Version 2) to avoid argument. The past versions are all useing GPL License(Version 2) now.)
+(This theme had used MIT License before. I changed the license to GPL License(Version 2) to avoid argument. The past versions are all using GPL License(Version 2) now.)
 
 3.更新记录
 --
