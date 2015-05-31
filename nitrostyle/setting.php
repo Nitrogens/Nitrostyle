@@ -28,6 +28,7 @@ function nitrostyle_setting() {
 					<td><label for="excerptlength">摘要字符数</label></td>
 					<td><input type="text" name="excerptlength" id="excerptlength" value="<?php echo $excerptlength; ?>" /></td>
 				</tr>
+				<?php } ?>
 				<tr>
 					<td><label>是否显示最新文章</label></td>
 					<td><input type="radio" <?php if ($sidebar_newest == "1") { ?>checked="checked"<?php } ?> name="sidebar_newest" value="1" />是&nbsp <input type="radio" <?php if ($sidebar_newest == "0") { ?>checked="checked"<?php } ?> name="sidebar_newest" value="0" />否</td>
@@ -39,8 +40,7 @@ function nitrostyle_setting() {
 				<tr>
 					<td><label>是否显示文章存档</label></td>
 					<td><input type="radio" <?php if ($sidebar_archive == "1") { ?>checked="checked"<?php } ?> name="sidebar_archive" value="1" />是&nbsp <input type="radio" <?php if ($sidebar_archive == "0") { ?>checked="checked"<?php } ?> name="sidebar_archive" value="0" />否</td>
-				</tr>
-				<?php } ?>			
+				</tr>	
 			</table>
 			<p>
 			<input type="submit" name="submit" class="button-primary" value="保存" />

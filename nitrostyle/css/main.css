@@ -19,6 +19,11 @@ body {
 	margin-top: 5px;
 }
 
+.nitrostyle-post-content img {
+	max-width: 100%;
+	height: auto;
+}
+
 .nitrostyle-next-posts-link {
 	float: right;
 }
